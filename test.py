@@ -20,10 +20,17 @@ conta2 = Conta(222,"Pedro",100, 200)
 extrato2 = conta2.extrato()
 print(extrato)
 
-conta.deposita(70)
+conta2.deposita(70)
 extrato2 = conta2.extrato()
 print(extrato)
 
-conta.saca(65.5)
+conta2.saca(65.5)
+extrato2 = conta2.extrato()
+print(extrato)
+
+conta2.transfere(conta,100)
+
+extrato = conta.extrato()
+print(extrato)
 extrato2 = conta2.extrato()
 print(extrato)
