@@ -1,18 +1,3 @@
-def cria_conta(numero, titular, saldo, limite):
-    conta = {
-        "numero": numero,
-        "titular": titular,
-        "saldo": saldo,
-        "limite": limite,
-    }
+from conta import Conta
 
-    return conta
-
-def deposita(conta, valor):
-    conta["saldo"] += valor
-
-def saca(conta, valor):
-    conta["saldo"] -= valor
-
-def extrato(conta, valor):
-    print(f"Saldo é: {conta['saldo']}")
+conta = Conta(123,"Piettro",50, 100)
