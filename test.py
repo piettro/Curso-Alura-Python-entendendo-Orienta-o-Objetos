@@ -28,6 +28,8 @@ conta2.saca(65.5)
 extrato2 = conta2.extrato()
 print(extrato)
 
+
+##Transferir dinheiro da conta 2 para conta 1
 conta2.transfere(conta,100)
 
 extrato = conta.extrato()

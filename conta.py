@@ -7,12 +7,6 @@ class Conta ():
         self.__saldo = saldo
         self.__limite = limite
 
-    def get_numero(self):
-        return self.__numero
-    
-    def get_titular(self):
-        return self.__titular
-
     def extrato(self):
         print(f"Saldo {self.__saldo} do titular {self.__titular}")
 
@@ -27,4 +21,14 @@ class Conta ():
         conta_destino.deposita(valor)
         print(f"Transferencia de número: {self.__numero} e titular: {self.__titular} \n para conta de número: {conta_destino.get_numero()} e titular {conta_destino.get_titular()} \n no valor de {valor}")
     
+    def get_numero(self):
+        return self.__numero
     
+    def get_titular(self):
+        return self.__titular
+    
+    def get_limite (self):
+        return self.__limite
+    
+    def set_limite(self, limite):
+        self.__limite = limite 
